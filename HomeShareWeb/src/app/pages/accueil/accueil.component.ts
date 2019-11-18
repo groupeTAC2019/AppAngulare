@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Bien } from 'src/app/models/Bien';
-import { BienApiService } from 'src/app/services/bien-api.service';
+import { Bien } from '../../models/Bien';
+import { BienApiService } from '../../services/bien-api.service';
 
 @Component({
   selector: 'app-accueil',
