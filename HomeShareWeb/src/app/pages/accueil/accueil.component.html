@@ -1,4 +1,8 @@
-  <div>
-    <p>blblbl</p>
- 
-  </div>
+<div>
+  <h3>les meilleurs echanges</h3>
+  <ul class="list-group list-group-horizontal">
+    <li class="list-group-item" *ngFor="let b of biens">
+      <app-carte-bien [bien]="b"></app-carte-bien>
+    </li>
+  </ul>
+</div>
