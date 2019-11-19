@@ -8,6 +8,7 @@ import { InscriptionComponent } from './pages/inscription/inscription.component'
 import { CarteMaisonComponent } from './composants/carte-maison/carte-maison.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AjoutBienComponent } from './pages/ajout-bien/ajout-bien.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     InscriptionComponent,
     CarteMaisonComponent,
-    HomeComponent
+    HomeComponent,
+    AjoutBienComponent
   ],
   imports: [
     BrowserModule,
