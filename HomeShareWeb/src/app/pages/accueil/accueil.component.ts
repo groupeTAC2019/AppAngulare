@@ -39,7 +39,7 @@ export class AccueilComponent implements OnInit {
 
   ngOnInit() {
   this.bienservice.getAll().subscribe(reponse=>{
-    this.biens=reponse.biens
+    this.biens=reponse
   });
   }
 }

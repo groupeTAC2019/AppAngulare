@@ -1,8 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Bien } from '../models/Bien';
-import { Reponse_bien } from '../models/reponse_bien';
+
+const options = {
+  headers : new HttpHeaders({
+    'Access-Control-Allow-Origin': '*'
+  })
+}
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +18,14 @@ export class BienApiService {
 
   constructor(private http: HttpClient) { }
 
-  getAll():Observable<Reponse_bien>{
-     return this.http.get<Reponse_bien>(this.path + '/bien/getall');
+  getAll():Observable<Bien[]>{
+
+    // let   headers: HttpHeaders = new HttpHeaders();
+    // headers = headers.append('Accept', 'application/json');
+    // headers = headers.append('Access-Control-Allow-Origin', '*');
+
+    
+
+     return this.http.get<Bien[]>(this.path + '/bien/getall', options);
   }
 }
