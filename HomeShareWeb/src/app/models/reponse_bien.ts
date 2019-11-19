@@ -1,9 +1,8 @@
 import {Bien} from './Bien';
 
-export class Reponse{
+export class Reponse_bien{
     constructor(
         public bien : Bien,
         public biens : Bien[],
-        public message : string
     ){}
 }

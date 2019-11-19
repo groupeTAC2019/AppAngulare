@@ -10,7 +10,9 @@ import { BienApiService } from '../../services/bien-api.service';
 export class AccueilComponent implements OnInit {
 
   bien: Bien;
-  biens: Bien[]= [
+  
+  biens: Bien[];
+  /*= [
     {id_bien:1,
       titre: 'maison de campagne', desc_courte: 'iam impotentia fines mediocrium delictorum nefanda Clematii cuiusdam Alexandrini nobilis mors repentina',
     desc_longue: 'Eminuit autem inter humilia supergressa iam impotentia fines mediocrium delictorum nefanda Clematii cuiusdam Alexandrini nobilis mors repentina',
@@ -31,12 +33,13 @@ export class AccueilComponent implements OnInit {
     id_adresse:  2,
     id_membre: 2}
   ]
-  
-  constructor() { 
-
+  */
+  constructor(private bienservice:BienApiService) { 
   }
 
   ngOnInit() {
-    
-}
+  this.bienservice.getAll().subscribe(reponse=>{
+    this.biens=reponse.biens
+  });
+  }
 }

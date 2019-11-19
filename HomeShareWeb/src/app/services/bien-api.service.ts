@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Bien } from '../models/Bien';
-import { Reponse } from '../models/reponse';
+import { Reponse_bien } from '../models/reponse_bien';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +13,7 @@ export class BienApiService {
 
   constructor(private http: HttpClient) { }
 
-  getAll():Observable<Reponse>{
-     return this.http.get<Reponse>(this.path + '/Bien/getall');
+  getAll():Observable<Reponse_bien>{
+     return this.http.get<Reponse_bien>(this.path + '/bien/getall');
   }
 }
