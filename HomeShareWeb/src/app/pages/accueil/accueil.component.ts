@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Bien } from '../../models/Bien';
-import { BienApiService } from '../../services/bien-api.service';
+import { BienService } from '../../services/bien.service';
 
 @Component({
   selector: 'app-accueil',
@@ -34,7 +34,7 @@ export class AccueilComponent implements OnInit {
     id_membre: 2}
   ]
   */
-  constructor(private bienservice:BienApiService) { 
+  constructor(private bienservice:BienService) { 
   }
 
   ngOnInit() {
