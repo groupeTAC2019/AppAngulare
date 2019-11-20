@@ -10,6 +10,7 @@ import { CarteMaisonComponent } from './composants/carte-maison/carte-maison.com
 import { HomeComponent } from './pages/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CarteBienComponent } from './composants/carte-bien/carte-bien.component';
+import { CarteMembreComponent } from './composants/carte-membre/carte-membre.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { CarteBienComponent } from './composants/carte-bien/carte-bien.component
     InscriptionComponent,
     CarteMaisonComponent,
     HomeComponent,
-    CarteBienComponent
+    CarteBienComponent,
+    CarteMembreComponent
   ],
   imports: [
     BrowserModule,
