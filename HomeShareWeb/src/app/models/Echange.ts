@@ -1,10 +1,10 @@
 export class Echange{
     constructor(
-        public id_echange: number,
-        public date_debut: Date,
-        public date_fin: Date,
-        public valide: boolean,
-        public id_bien:number,
-        public id_membre: number
+        public Id_echange: number,
+        public Date_debut: Date,
+        public Date_fin: Date,
+        public Valide: boolean,
+        public Id_bien:number,
+        public Id_membre: number
     ){}
 }

@@ -1,12 +1,12 @@
 export class Commentaire
 {
     constructor(
-        public id_commentaire: number,
-        public message: string ,
-        public note: number,
-        public valide: boolean,
-        public id_membre: number,
-        public id_bien: number) 
+        public Id_commentaire: number,
+        public Message: string ,
+        public Note: number,
+        public Valide: boolean,
+        public Id_membre: number,
+        public Id_bien: number) 
     {}
     
  
