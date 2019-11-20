@@ -1,12 +1,12 @@
 export class Membre
 {
     constructor(
-        public id_membre: number,
-        public nom: string ,
-        public prenom: string,
-        public email: string,
-        public tel: number,
-        public admin: boolean,
-        public mdp: string,
-        public id_pays: number) {}
+        public Id_membre: number,
+        public Nom: string ,
+        public Prenom: string,
+        public Email: string,
+        public Tel: number,
+        public Admin: boolean,
+        public Mdp: string,
+        public Id_pays: number) {}
 }

@@ -1,6 +1,6 @@
 export class Piece{
     constructor(
-      public id_piece: number,
-      public nom: string  
+      public Id_piece: number,
+      public Nom: string  
     ){}
 }

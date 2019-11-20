@@ -1,16 +1,16 @@
 export class Bien
 {
     constructor(
-    public id_bien: number,
-    public titre: string ,
-    public desc_courte: string,
-    public desc_longue: string,
-    public date_ajout: Date,
-    public nb_personne: number,
-    public disponible: boolean,
-    public date_desactivation: Date,
-    public id_adresse: number,
-    public id_membre: number){}
+    public Id_bien: number,
+    public Titre: string ,
+    public Desc_courte: string,
+    public Desc_longue: string,
+    public Date_ajout: Date,
+    public Nb_personne: number,
+    public Disponible: boolean,
+    public Date_desactivation: Date,
+    public Id_adresse: number,
+    public Id_membre: number){}
       //propriete bien
       
 }
