@@ -1,6 +1,6 @@
 export class Pays{
     constructor(
-      public id_pays: number,
-      public nom: string  
+      public Id_pays: number,
+      public Nom: string  
     ){}
 }
