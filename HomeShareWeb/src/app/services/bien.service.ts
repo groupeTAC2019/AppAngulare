@@ -31,10 +31,13 @@ export class BienService {
   }
 
   getBienPays():Observable<Bien[]>{
-    return this.http.get<Bien[]>(this.path + 'bien/pays',options)
+    return this.http.get<Bien[]>(this.path + '/bien/pays',options)
   }
 
   getBienRepu():Observable<Bien[]>{
-    return this.http.get<Bien[]>(this.path + 'bien/reputation',options)
+    return this.http.get<Bien[]>(this.path + '/bien/reputation',options)
+  }
+  getBienMembre(id_membre : number):Observable<Bien>{
+    return this.http.get<Bien>(this.path + '/Membre/' + id_membre + '/Bien',options)
   }
 }
