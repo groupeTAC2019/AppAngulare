@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { deepStrictEqual } from 'assert';
 import { Option } from '../models/Option';
 import { Observable } from 'rxjs';
+import { Adresse } from '../models/Adresse';
 
 const options ={
 headers: new HttpHeaders({
@@ -29,6 +30,11 @@ export class ApiServiceService {
   }
 
 
-
+  postBien(bien,adresse){
+    let resultAdresse : Adresse = null;
+    resultAdresse = this.http.post('http://localhost:60583/api/Adresse',adresse);
+    bien.id_adresse = resultAdresse.
+    this.http.post
+  }
 
 }

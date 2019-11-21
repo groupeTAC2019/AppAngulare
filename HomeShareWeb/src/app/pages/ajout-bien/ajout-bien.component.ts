@@ -26,6 +26,6 @@ export class AjoutBienComponent implements OnInit {
   }
 
   submitForm(){
-
+    this.api.
   }
 }
