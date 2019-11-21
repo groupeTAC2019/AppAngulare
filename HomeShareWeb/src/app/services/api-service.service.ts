@@ -32,9 +32,13 @@ export class ApiServiceService {
 
   postBien(bien,adresse){
     let resultAdresse : Adresse = null;
-    resultAdresse = this.http.post('http://localhost:60583/api/Adresse',adresse);
-    bien.id_adresse = resultAdresse.
-    this.http.post
+    this.http.post<Adresse>('http://localhost:60583/api/Adresse',adresse).subscribe(data => {
+      resultAdresse = data
+      bien.id_adresse = resultAdresse.
+    
+
+    })
+
   }
 
 }
